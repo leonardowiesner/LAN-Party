@@ -7,26 +7,20 @@ public class main {
 		Scanner sc = new Scanner(System.in);
 
 		int nfilas = 0;
-		int x = 0;
 		int ncolumnas = 0;
 
 		System.out.println("LAN PARTY");
 
-		System.out.println("Introduce cuaantas filas deseas printar");
+		System.out.println("Introduce cuantas filas deseas mostrar en pantalla (Debe ser mayor a 0)");
 		nfilas = sc.nextInt();
-
 		System.out.println("Introduce cuantas columnas deseas printar");
 		ncolumnas = sc.nextInt();
 
-		for (int i = 1; i <= nfilas; i++) {
-			for (x = 1; x <= ncolumnas; x++) {
-				System.out.print(x + " ");
-
+		for (int i = 0; i <= (nfilas - 1); i++) {
+			for (int x = 0; x <= (ncolumnas - 1); x++) {
+				System.out.print(i + "" + x + " ");
 			}
-			System.out.println("");
-			x++;
+			System.out.println();
+			}
 		}
-
 	}
-
-}
